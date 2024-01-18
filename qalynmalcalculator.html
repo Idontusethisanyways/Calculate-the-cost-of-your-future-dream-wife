@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculate the cost of your "future" wife</title>
+    <link rel="stylesheet" href="cisca.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>Қалын мал құның есептегіш</header>
+      <form action="#" class="form">
+        
+        <div class="input-box">
+          <label>Жасы</label>
+          <input type="range" name="age" id="age" min="18" max="99" value="0" oninput="age_value.value=age.value" required />
+          <output id="age_value">18</output>
+        </div>
+
+        <div class="input-box">
+            <label>Бойы</label>
+            <input type="range" name="age1" id="age1" min="150" max="200" value="0" oninput="age1_value.value=age1.value" required />
+            <output id="age1_value">150</output>
+          </div>
+        
+        <div class="eye-box">
+            <label>Көзінің түсі</label>
+            <div class="eye-option">
+                <div class="eye">
+                  <input type="radio" id="check-hair" name="eye[]" value="3"/>
+                  <label for="check-blue">Көк</label>
+                </div>
+                <div class="eye">
+                  <input type="radio" id="check-hair" name="eye[]" value="2" />
+                  <label for="check-green">Жасыл</label>
+                </div>
+                <div class="eye">
+                  <input type="radio" id="check-hair" name="eye[]" value="1" />
+                  <label for="check-brown">Қоңыр</label>
+                </div>
+          </div>
+
+        <div class="column">
+            <div class="hair-box">
+                <label>Шашының түсі</label>
+                <div class="hair-option" required>
+                    <div class="hair">
+                      <input type="radio" id="check-hair" name="hair[]" value="1"/>
+                      <label for="check-brown">Қоңыр</label>
+                    </div>
+                    <div class="hair">
+                      <input type="radio" id="check-hair" name="hair[]" value="2" />
+                      <label for="check-black">Қара</label>
+                    </div>
+                    <div class="hair">
+                      <input type="radio" id="check-hair" name="hair[]" value="2" />
+                      <label for="check-blonde">Ақсары</label>
+                    </div>
+              </div>
+              <div class="hairl-box">
+                <label>Шашы</label>
+                <div class="hairl-option">
+                    <div class="hairl">
+                      <input type="radio" id="check-hairl" name="hairl[]" value="3"/>
+                      <label for="check-long">Ұзын, тік шаш</label>
+                    </div>
+                    <div class="hairl">
+                      <input type="radio" id="check-hairl" name="hairl[]" value="2" />
+                      <label for="check-short">Иыққа жететін, тік шаш</label>
+                    </div>
+                    <div class="hairl">
+                      <input type="radio" id="check-hairl" name="hairl[]" value="3" />
+                      <label for="check-curly-long">Ұзын, бұйра шаш</label>
+                    </div>
+                    <div class="hairl">
+                        <input type="radio" id="check-hairl" name="hairl[]" value="2" />
+                        <label for="check-curly-short">Иыққа жететін, бұйра шаш</label>
+                    </div>
+        </div>
+        <div class="shape-box">
+          <h3>Дене бітімі</h3>
+          <div class="shape-option">
+            <div class="shape">
+              <input type="radio" id="check-petite" name="shape[]" value="2"/>
+              <label for="check-petite">Сымбатты</label>
+            </div>
+            <div class="shape">
+              <input type="radio" id="check-fit" name="shape[]" value="3" />
+              <label for="check-fit">Сұңғақты</label>
+            </div>
+            <div class="shape">
+              <input type="radio" id="check-unfit" name="shape[]"  value="1" />
+              <label for="check-unfit">Толық</label>
+            </div>
+          </div>
+        </div>
+        <div class="yn-box">
+            <h3>Білімі</h3>
+            <div class="yn-option">
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn[]" value="3"/>
+                <label for="check-y">Докторантура</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn[]" value="2"/>
+                <label for="check-n">Бакалавр</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn[]" value="1"/>
+                <label for="check-m">Мектеп</label>
+              </div>
+            </div>
+          </div>
+          <div class="yn-box">
+            <h3>Үйге пысық па?</h3>
+            <div class="yn-option">
+              <div class="yn">
+                <input type="radio" id="check-yn1" name="yn1[]"value="3"/>
+                <label for="check-y1">Ия</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn1" name="yn1[]"value="1" />
+                <label for="check-n1">Жоқ</label>
+              </div>
+            </div>
+          </div>
+          <div class="yn-box">
+            <h3>Өмір салты</h3>
+            <div class="yn-option">
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn2[]" value="3"/>
+                <label for="check-y">Салауатты</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn2[]" value="2"/>
+                <label for="check-y">Қалыпты</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn2[]" value="1"/>
+                <label for="check-n">Зиянды</label>
+              </div>
+            </div>
+          </div>
+          <div class="yn-box">
+            <h3>Қызығушылығы</h3>
+            <div class="yn-option">
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn3[]" value="2"/>
+                <label for="check-y">Спорт</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn3[]" value="2"/>
+                <label for="check-n">Ілім</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn3[]" value="2"/>
+                <label for="check-a">Өнер</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn3[]" value="2"/>
+                <label for="check-b">Кәсіп/мансап</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn3[]" value="2"/>
+                <label for="check-c">Саяхаттау</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn3[]" value="3"/>
+                <label for="check-d">Үй шаруашылығы</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn3[]" value="1"/>
+                <label for="check-e">Әлеуметтік желілер</label>
+              </div>
+            </div>
+          </div>
+          <div class="yn-box">
+            <h3>Ұлты</h3>
+            <div class="yn-option">
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn4[]" value="2"/>
+                <label for="check-yt">Қазақ</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn" name="yn4[]" value="1"/>
+                <label for="check-nr">Өзге</label>
+              </div>
+            </div>
+          </div>
+          <div class="yn-box">
+            <h3>Руы</h3>
+            <div class="yn-option">
+              <div class="yn">
+                <input type="radio" id="check-yn1" name="yn5[]"value="2"/>
+                <label for="check-yq">Жүзге жатады</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn2" name="yn5[]"value="1" />
+                <label for="check-nw">Басқа жүзден тыс</label>
+              </div>
+              <div class="yn">
+                <input type="radio" id="check-yn3" name="yn5[]"value="3" />
+                <label for="check-ne">Төре/Қожа</label>
+              </div>
+            </div>
+          </div>
+          <button id="button" onclick="count_this()">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
